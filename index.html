@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>REGISTRATION FORM</title>
+</head>
+<body>
+    <div class="header">
+        <h1>STUDENT ENROLLMENT FORM</h1>
+    </div>
+    <div class="main">
+        <div class="box">
+            <div class="details">
+                <form class="info">
+                    <div >
+                        <label for="name">NAME </label>
+                        <input type="text" id="Name" name="Name">
+                    </div>
+                    <div >
+                        <label for="email">EMAIL </label>
+                        <input type="text" id="Email" name="Email">
+                    </div>
+                    <div>
+                        <label for="website">WEBSITE LINK </label>
+                        <input type="text" id="website" name="website">
+                    </div>
+                    <div>
+                        <label for="Image">UPLOAD IMAGE </label>
+                        <input type="file" id="Image" name="Image" class="custom-file-input" onchange="image(event)">
+                    </div>
+                    <div>
+                        <label for="gender">GENDER </label>
+                        <label><input name="gender" type="radio" id="Male" value="male">MALE</label>
+                        <label><input name="gender" type="radio" id="Female" value="female">FEMALE</label>
+                        </div>
+                    </div>
+                    <div class="skills">
+                        <label for="skills">SKILLS </label>
+                        <label><input name="html" type="checkbox" value="html" id="html">HTML</label>  
+                    <div class="skill">
+                        <label><input name="css" type="checkbox" value="css" id="css">PYTHON</label>
+                        <label><input name="js" type="checkbox" value="java script" id="js">CSS </label>
+                        <label><input name="python" type="checkbox" value="python" id="python">JAVA SCRIPT </label>
+                    </div>
+                    </div>
+                        <div class="btn">
+                            <button type="button" id="btn" class="button">SUBMIT</button>
+                            <button type="clear" class="button">CLEAR</button>
+                        </div>
+                </form>
+            </div>
+        </div>
+        <div class="box">
+            <div class="display">
+                <h1>ENROLLED STUDENTS DETAILS</h1>
+                <div class="cards"></div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
